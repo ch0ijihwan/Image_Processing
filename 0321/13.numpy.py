@@ -5,8 +5,10 @@ a = np.random.rand(2,3)                  #균일분포 난수, 2행 3열 행렬
 b = np.random.randn(3,2)                 #평균 0, 표준편차 1의 정규 분포 난수
 c = np.random.rand(6)                   #균일분포 난수 - 1차원 행렬
 d = np.random.randint(1,100,6)           #1~100사이 정수 난수 1차원 행렬
+print('d  형태:', a.shape, '\n',d)
 c = np.reshape(c,(2,3))                  #형태(shape) 변경 방법1
-e = d.reshape(3,-1)                      #형태(shape) 변경 방법2 행은 2행으로 하되 열은 알아서( -1 ) 해라
+e = d.reshape(3,-1)                      #형태(shape) 변경 방법2 행은 2행으로 하되 열은 알아서( -1 ) 해라 // 여기서 d를 e로 저장해도 이미 바뀌었음
+
 
 print('a  형태:', a.shape, '\n',a)
 print('b  형태:', a.shape, '\n',b)
