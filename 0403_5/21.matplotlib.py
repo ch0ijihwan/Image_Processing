@@ -13,7 +13,7 @@ plt.imshow(image ), plt.title('figure1- original(bgr)')
 plt.axis('off'), plt.tight_layout()
 
 fig = plt.figure(num=2, figsize=(6,4))
-plt.suptitle( 'figure2- pyplot image display')
+plt.suptitle( 'figure2- pyplot images display')
 plt.subplot(1,2,1), plt.imshow(rgb_img)
 plt.axis([0,cols, rows,0]), plt.title('rgb color')
 plt.subplot(1,2,2), plt.imshow(gray_img, cmap='gray')

@@ -15,5 +15,5 @@ for row in roi_img:
     print()
 
 cv2.rectangle(image, (x,y, w,h), 255, 1)
-cv2.imshow("image", image)
+cv2.imshow("images", image)
 cv2.waitKey(0)

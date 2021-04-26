@@ -30,6 +30,6 @@ print()
 print("[mean2] = ", mean2.flatten())
 print("[stddev2] = ", stddev2.flatten())
 
-cv2.imshow("image", image)
+cv2.imshow("images", image)
 cv2.imshow("mask", mask)
 cv2.waitKey(0)

@@ -24,5 +24,5 @@ print("User 함수: \n", hist1.flatten())                # 행렬을 벡터로 �
 print("OpenCV 함수: \n", hist2.flatten())                # 행렬을 벡터로 변환하여 출력
 print("numpy 함수: \n", hist3)                           # 행렬을 벡터로 변환하여 출력
 
-cv2.imshow("image", image)
+cv2.imshow("images", image)
 cv2.waitKey(0)

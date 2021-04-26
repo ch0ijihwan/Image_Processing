@@ -11,6 +11,6 @@ dst = np.round((image - min_val) * ratio).astype('uint8')
 
 print("원본 영상 최솟값= %d , 최댓값= %d" % (min_val, max_val))
 print("수정 영상 최솟값= %d , 최댓값= %d" % (min_dst, max_dst))
-cv2.imshow("image", image)
+cv2.imshow("images", image)
 cv2.imshow("dst"  , dst)
 cv2.waitKey(0)

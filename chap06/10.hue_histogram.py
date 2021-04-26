@@ -33,6 +33,6 @@ hsv_img = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)   # BGR 컬러 -> HSV 컬러
 hue_hist = cv2.calcHist( [hsv_img], [0], None, [18], [0,180])       # Hue 채널 히스토그램 계산
 hue_hist_img = draw_histo_hue(hue_hist, (200, 360, 3)) # 히스토그램 그래프
 
-cv2.imshow("image", image)
+cv2.imshow("images", image)
 cv2.imshow("hue_hist_img", hue_hist_img)
 cv2.waitKey(0)

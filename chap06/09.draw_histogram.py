@@ -19,6 +19,6 @@ if image is None: raise Exception("영상 파일 읽기 오류")
 hist = cv2.calcHist([image], [0], None, [32], [0, 256])
 hist_img = draw_histo(hist)
 
-cv2.imshow("image", image)
+cv2.imshow("images", image)
 cv2.imshow("hist_img", hist_img)
 cv2.waitKey(0)

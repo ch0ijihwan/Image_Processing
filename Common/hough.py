@@ -7,7 +7,7 @@ def accumulate(image, rho, theta):
     accumulate = np.zeros((rows, cols), np.int32)    # 직선 누적행렬
 
     sin_cos = [(np.sin(t * theta), np.cos(t * theta)) for t in range(cols)]  # 삼각 함수값 미리 저장
-    # pts = [(y, x) for x in range(w) for y in range(h) if image[y, x] > 0 ]
+    # pts = [(y, x) for x in range(w) for y in range(h) if images[y, x] > 0 ]
     pts = np.where(image > 0)
 
     polars = np.dot(sin_cos, pts).T            # 행렬곱으로 허프 변환 수식 계산

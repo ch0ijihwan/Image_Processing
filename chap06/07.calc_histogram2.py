@@ -21,6 +21,6 @@ hist2 = cv2.calcHist([image], ch, None, hsize, ranges)  # OpenCV 함수
 
 print("사용자 정의 함수: \n", hist1)                           # 행렬을 벡터로 변환하여 출력
 print("사용자 정의 함수: \n", hist2)
-cv2.imshow("image", image)
+cv2.imshow("images", image)
 cv2.waitKey(0)
 

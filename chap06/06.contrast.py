@@ -12,7 +12,7 @@ dst3 = cv2.addWeighted(image, 0.5, noimage, 0, avg)     # 명암대비 감소
 dst4 = cv2.addWeighted(image, 2.0, noimage, 0,-avg)     # 명암대비 증가
 
 # 영상 띄우기
-cv2.imshow("image", image)
+cv2.imshow("images", image)
 cv2.imshow("dst1 - decrease contrast", dst1)
 cv2.imshow("dst2 - increase contrast", dst2)
 cv2.imshow("dst3 - decrease contrast using average", dst3)

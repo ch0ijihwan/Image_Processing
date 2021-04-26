@@ -26,6 +26,7 @@ cv2.namedWindow(title)                          # 윈도우 생성 - 반드시 �
 cv2.createTrackbar("zoom" , title, 0, 10, zoom_bar)
 cv2.createTrackbar("focus", title, 0, 40, focus_bar)
 
+
 while True:
     ret, frame = capture.read()                 # 카메라 영상 받기
     if not ret: break

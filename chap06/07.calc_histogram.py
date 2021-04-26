@@ -17,5 +17,5 @@ hsize, ranges = [16], [0, 256]  # 히스토그램 간격수, 값 범위
 hist = calc_histo(image, hsize[0], ranges)  # 사용자 정의 히스토그램 계산
 
 print("사용자 정의 함수: \n", hist.flatten())  # 행렬을 벡터로 변환하여 출력
-cv2.imshow("image", image)
+cv2.imshow("images", image)
 cv2.waitKey(0)

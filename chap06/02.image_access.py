@@ -48,7 +48,7 @@ image4 = time_check(pixel_access4, "[방법 4] OpenCV 함수 방식")
 image5 = time_check(pixel_access5, "[방법 5] ndarray 연산 방식")
 
 # 결과 영상 보기
-cv2.imshow("image  - original", image)
+cv2.imshow("images  - original", image)
 cv2.imshow("image1 - directly access to pixel", image1)
 cv2.imshow("image2 - item()/itemset()", image2)
 cv2.imshow("image3 - LUT", image3)

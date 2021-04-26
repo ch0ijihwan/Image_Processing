@@ -3,7 +3,7 @@ import cv2
 image = cv2.imread("read_color.jpg", cv2.IMREAD_COLOR) #명암도
 if image is None: raise Exception("영상 파일 읽기 에러")
 
-title = "image"
+title = "images"
 cv2.imshow(title,image)
 cv2.waitKey(0)
 

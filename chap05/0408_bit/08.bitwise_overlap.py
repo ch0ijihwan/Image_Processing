@@ -23,5 +23,5 @@ dst = cv2.add(background, foreground)            # 로고 전경과 원본 배�
 image[y:y+h, x:x+w] = dst             # 합성 영상을 원본에 복사
 
 cv2.imshow("background", background);  cv2.imshow("forground", foreground)
-cv2.imshow("dst", dst);                 cv2.imshow("image", image)
+cv2.imshow("dst", dst);                 cv2.imshow("images", image)
 cv2.waitKey()

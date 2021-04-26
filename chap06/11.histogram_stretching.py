@@ -24,10 +24,10 @@ idx[int(high+1):] = 255
 
 dst = cv2.LUT(image, idx.astype('uint8'))
 ## 룩업 테이블 사용하지 않고 직접 구현
-# dst = np.zeros(image.shape, dtype=image.dtype)
+# dst = np.zeros(images.shape, dtype=images.dtype)
 # for i in range(dst.shape[0]):
 #     for j in range(dst.shape[1]):
-#         dst[i,j] = idx[image[i,j]]
+#         dst[i,j] = idx[images[i,j]]
 
 hist_dst = cv2.calcHist([dst], [0], None, bsize, ranges)  # 결과 영상 히스토그램 재계산
 hist_img = draw_histo(hist, (200,360))          # 원본 영상 히스토그램 그리기
@@ -35,6 +35,6 @@ hist_dst_img = draw_histo(hist_dst,(200,360))  # 결과 영상 히스토그램 �
 
 print("high_value = ", high)
 print("low_value = " , low)
-cv2.imshow("image", image);         cv2.imshow("hist_img", hist_img)
+cv2.imshow("images", image);         cv2.imshow("hist_img", hist_img)
 cv2.imshow("dst", dst);             cv2.imshow("hist_dst_img", hist_dst_img)
 cv2.waitKey(0)

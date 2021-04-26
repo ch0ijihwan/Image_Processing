@@ -10,7 +10,7 @@ rep_image   = cv2.repeat(image, 1, 2)       # 반복 복사
 trans_image = cv2.transpose(image)          # 행렬 전치
 
 ## 각 행렬을 영상으로 표시
-titles = ['image', 'x_axis', 'y_axis','xy_axis','rep_image','trans_image']
+titles = ['images', 'x_axis', 'y_axis','xy_axis','rep_image','trans_image']
 for title in titles:
     cv2.imshow(title, eval(title)) #eval => 문자열을 명령어로 만들어줌 . 즉 행렬 변수로 사용
 cv2.waitKey(0)

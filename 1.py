@@ -15,5 +15,5 @@ for i, (pt1, pt2) in enumerate(zip(pts1, pts2)):
 image = np.full((400, 500, 3), 255, np.uint8)
 cv2.polylines(image, [np.int32(pts1)], True, (0, 255, 0), 2)
 cv2.polylines(image, [np.int32(pts2)], True, (255, 0, 0), 3)
-cv2.imshow("image", image)
+cv2.imshow("images", image)
 cv2.waitKey(0)
